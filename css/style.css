@@ -1,0 +1,269 @@
+/* ICONOS */
+
+@font-face {
+    font-family: 'redes';
+    src: url('../fonts/redes.woff?1degzw') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'redes' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-facebook:before {
+    content: "\e900";
+}
+.icon-instagram:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+
+/*******************************************/
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: black;
+    width: 100vw;
+    height: 60px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: 'Roboto Mono';
+    color: white;
+    font-size: 40px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.bloque {
+    margin-top: 80px;
+}
+
+.redes__sociales {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.redes {
+    margin-left: 15px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.redes__link {
+    color:rgb(255, 218, 6);
+    text-decoration: none;
+}
+
+.redes__link:hover {
+    color: red;
+}
+
+.error__404 {
+    text-transform: uppercase;
+    display: flex;
+    padding-top: 30px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    letter-spacing: -2px;
+
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    color: white;
+    margin: auto;
+}
+
+.error__404:hover {
+    animation: PENDULO 1s ease-in-out infinite alternate; /* ease-in-out para que vaya y vuelva con la misma velocidad */
+    transform: translateX(-20px);
+}
+
+@keyframes PENDULO {
+    to {transform: translateX(20px);
+    animation: 1s;}
+}
+
+.palabra1 {
+    font-size: 80px;
+    border-bottom: 4px solid white;
+}
+
+.palabra2 {
+    font-size: 40px;
+    margin-top: 46px;
+    border-bottom: 4px solid white;
+}
+
+.palabra3 {
+    font-size: 180px;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    letter-spacing: -15px;
+    text-shadow: 14px 14px 0px rgb(218, 0, 0);
+    color: rgb(255, 218, 6);
+
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 25px;
+}
+
+.boton {
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+
+    width: 200px;
+    height: 80px;
+    display: flex; /* preguntar por que no alinea al centro */
+    align-items: center; /*porque no alinea */
+    justify-content: center;
+    margin:auto;
+    /*poniendo margin auto y quitando position absolute se alinea perfectamente */
+
+    background: transparent;
+    border: 10px solid white;
+    box-shadow: 7px 7px 0px white;
+    border-radius: 67px;
+    transition: 1s;
+}
+
+.boton__inicio {
+    color: white;
+    padding: 15px;
+    text-decoration: none; /* para quitar subrayado */
+    position: absolute;
+}
+
+
+.boton:hover {
+    background-color: red;
+    border: 10px solid black;
+    box-shadow: 7px 7px 0px black;
+    border-radius: 67px;
+    transition: 1s;
+    /*width: 330px; /*si le pongo padding no funciona, no se porque si el "boton" es display flex */
+    transform: scale(1.2);
+}
+
+/***************************************************************************************************************************************************** MEDIA ********************************************************************************************/
+
+
+@media (min-width: 768px)
+{
+    .bloque {
+        margin-top: 25px;
+    }
+    
+    .error__404 {
+        text-transform: uppercase;
+        display: flex;
+        padding-top: 30px;
+    
+        font-family: 'Roboto';
+        font-weight: 700;
+        letter-spacing: -5px;
+    
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        color: white;
+        margin: auto;
+    }
+
+    .palabra1 {
+        font-size: 140px;
+    }
+    
+    .palabra2 {
+        font-size: 80px;
+        margin-top: 70px;
+    }
+
+    .palabra3 {
+        font-size: 280px;
+        font-family: 'Roboto Mono';
+        font-weight: 700;
+        letter-spacing: -15px;
+        text-shadow: 14px 14px 0px rgb(218, 0, 0);
+        color: rgb(255, 218, 6);
+    
+        margin-top: -70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton {
+        font-size: 40px;
+        font-family: 'Roboto Mono';
+    
+        width: 280px;
+        height: 100px;
+        display: flex; /* preguntar por que no alinea al centro */
+        align-items: center; /*porque no alinea */
+        justify-content: center;
+        margin:auto;
+        /*poniendo margin auto y quitando position absolute se alinea perfectamente */
+    
+        background: transparent;
+        border: 10px solid white;
+        box-shadow: 7px 7px 0px white;
+        border-radius: 67px;
+        transition: 1s;
+    }
+    
+    .boton__inicio {
+        color: white;
+        padding: 15px;
+        text-decoration: none; /* para quitar subrayado */
+        position: absolute;
+    }
+
+    .boton:hover {
+        background-color: red;
+        border: 10px solid black;
+        box-shadow: 7px 7px 0px black;
+        border-radius: 67px;
+        transition: 1s;
+        /*width: 330px; /*si le pongo padding no funciona, no se porque si el "boton" es display flex */
+        transform: scale(1.3);
+    }
+}
