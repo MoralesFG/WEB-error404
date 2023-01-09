@@ -5,3 +5,5 @@ En este caso, tuvimos libertad creativa para preparar el 'error 404' que más en
 [![Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png](https://i.postimg.cc/J4PXDdF3/Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png)](https://postimg.cc/QHKCvShV)
 
 [![Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png](https://i.postimg.cc/yYZqWwxt/Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png)](https://postimg.cc/nCpSPSvG)
+
+[![Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png](https://i.postimg.cc/44rf8v9C/Captura-de-Pantalla-2023-01-09-a-las-16-37-46.png)](https://postimg.cc/fkfQy9C5)
